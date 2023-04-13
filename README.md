@@ -3,7 +3,7 @@ recommendation engine for food delivery apps
 
 ## Dependencies:
 - go - 1.20
-- redis - 7 and above
+- redis-server - 7.0.10
 
 ## Install dependencies:
 go install
