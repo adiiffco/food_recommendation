@@ -35,7 +35,9 @@ func TestRecommendation(t *testing.T) {
 	}
 	restList := GetRestaurantRecommendation(userFilter, restaurantList)
 	fmt.Println("response: ", restList)
-	if len(restList) > 0 {
+	if len(restList) > 0 && restList[0].Id == 79 {
 		t.Log("Passed")
+	} else {
+		t.Fatal("Recommendation error")
 	}
 }
